@@ -29,8 +29,8 @@ const bottomQuotes = [
 const allGoals = JSON.parse(localStorage.getItem("allGoals")) || {};
 
 if (allGoals) {
-  allGoals["fourth"].completed = false;
-  allGoals["fifth"].completed = false;
+  allGoals["fourth"] = {data: "", completed: false};
+  allGoals["fifth"] = {data: "", completed: false};
 }
 
 let completedGoalCount = Object.values(allGoals).filter(
